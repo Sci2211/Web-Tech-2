@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>JavaScript HTML Events</title>
+         <script> 
+         function loadHandler() {
+             alert("The page has finished loading!"); }
+            function selectHandler() {
+             alert("An option in the dropdown has been selected!"); }
+         </script>
+    </head>
+<body onload="loadHandler()">
+    <h2>onSelect and onLoad Event Example</h2>
+    <h4>select color:</h4>
+    <select onchange="selectHandler()">
+    <option value="">Select...</option>
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option> 
+    <option value="Yellow">Yellow</option> 
+    </select>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+    <div>
+        <ul class="language">
+            <li>Javascript</li>
+        </ul>
+
+    </div>
+
+    
+</body>
+<script>
+    function addLang(lang){
+        const li = document.createElement("li");
+        li.innerHTML = lang;
+        document.querySelector(".language").appendChild(li);
+    }
+    addLang("Ruby");
+    addLang("Swift");
+    addLang("Python");
+
+    // Edit
+    const target1 = document.querySelector("li:nth-child(2)");
+    console.log(target1);
+    const newobj = document.createElement("li");
+    newobj.innerHTML = "Moja Punjaban";
+    target1.replaceWith(newobj);
+    
+    const target2 = document.querySelector("li:last-child");
+    console.log(target2);
+    target2.remove();
+</script>
+</html>

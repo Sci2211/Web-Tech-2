@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1> Student Information</h1>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name: </label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="Phone">Enter Your Phone Number :</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-23-123" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <label for="cars">Choose your branch</label><br>
+        <select id="branch" name="branch" size="1" multiple style="width: 15%; background-color: rgb(219, 202, 235);">
+        <option value="CSE">CSE</option>
+        <option value="AIML">AIML</option>
+        <option value="IOT">IOT</option>
+        <option value="DS">DS</option>
+        </select><br><br>
+        <label for="Gender">Gender:</label><br>
+        <input type="radio" id="Male" name="Male" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Female" value="Female">
+        <label for="Female">Female</label><br><br>
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>
